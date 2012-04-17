@@ -1,7 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  name: MyString
   title: MyString
+  description: MyText
+  date: 2012-04-12
+  tag_id: 1
 
 two:
+  name: MyString
   title: MyString
+  description: MyText
+  date: 2012-04-12
+  tag_id: 1

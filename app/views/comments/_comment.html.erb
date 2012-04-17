@@ -1,0 +1,13 @@
+<div>
+	<b>Commenter:</b>
+	<%= comment.commenter %>
+</div>
+<div>
+	<b>Comment:</b>
+	<%= comment.body %>
+</div>
+<div>
+  <%= link_to 'Destroy Comment', [comment.project, comment],
+			:confirm => 'Are you sure?',
+			:method => :delete %>
+</div>
