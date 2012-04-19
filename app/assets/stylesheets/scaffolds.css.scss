@@ -8,16 +8,118 @@ body {
 	line-height: 18px;
 	margin-top: 110px;
 	background-color: #EEEEEE;
-	background-image: url('http://www.dustinjsparks.com/images/bg_pattern.png');
+	background-image: url('../images/bg_pattern.png');
 	
 	// needs latest Compass, add '@import "compass"' to your scss
-	@include filter-gradient(#eeeeee, #c40000, vertical);
-	@include background-image(linear-gradient(bottom, #EEE 37%, rgba(0, 0, 0, 0.1) 100%));
-	@include background-origin( border-box );
-	background-repeat: no-repeat;
-	background-size: 100% 165px;
+	//@include filter-gradient(#eeeeee, #c40000, vertical);
+	@include background(linear-gradient(top, #000 0%, rgba(0, 0, 0, 0) 30%), image-url('bg_pattern.png'));
+
+	background-repeat: no-repeat, repeat;
+	//@include background-origin( border-box );
 }
 
+.holder {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: black 0px 0px 30px, inset 0 0 60px silver;
+	-webkit-box-shadow: black 0px 0px 30px, inset 0 0 60px silver;
+	box-shadow: black 0px 0px 30px, inset 0 0 60px silver;
+	font-family: Arial,Helvetica,sans-serif;
+	margin: 15px 50px;
+	background-color: white;
+}
+
+.image {
+	box-shadow: 5px 0pt 20px black inset;
+	-webkit-box-shadow: 5px 0pt 20px black inset;
+	-moz-box-shadow: 5px 0pt 20px black inset;
+	border-radius: 12px 2px 12px 2px;
+	-moz-border-radius: 12px 2px 12px 2px;
+	-webkit-border-top-left-radius: 12px;
+	-webkit-border-top-right-radius: 2px;
+	-webkit-border-bottom-right-radius: 12px;
+	-webkit-border-bottom-left-radius: 2px;
+	float: left;
+	min-width: 250px;
+	min-height: 150px;
+	background-repeat: no-repeat;
+	margin: 10px;
+	background-color: silver;
+}
+
+.close {
+	border-radius: 40px 0px 0px 40px;
+	-moz-border-radius: 40px 0px 0px 40px;
+	-webkit-border-radius: 40px 0px 0px 40px;
+	-webkit-border-top-left-radius: 40px;
+	-webkit-border-bottom-left-radius: 40px;
+	box-shadow: -4px 0 10px black, 2px 0 5px red inset;
+	-moz-box-shadow: -4px 0 10px black, 2px 0 5px red inset;
+	-webkit-box-shadow: black -4px 0 10px, inset red 2px 0 5px;
+	background: url("../images/bg_pattern_red.png") repeat scroll 0 0 transparent;
+	color: white;
+	cursor: pointer;
+	font-family: Arial,Helvetica,sans-serif;
+	font-variant: small-caps;
+	font-weight: 700;
+	height: 18px;
+	left: 29.5px;
+	padding: 5px;
+	position: absolute;
+	text-align: center;
+	width: 18px;
+	z-index: 0;
+	display: none;
+	margin-top: 10px;
+}
+
+.view {
+	border-radius: 8px 0 8px 0;
+	-moz-border-radius: 8px 0 8px 0;
+	-webkit-border-radius: 8px 0 8px 0;
+	box-shadow: 1px 2px 4px white inset;
+	-moz-box-shadow: 1px 1px 2px silver inset;
+	-webkit-box-shadow: 1px 1px 2px silver inset;
+	background-color: #48577D;
+	background-image: url("../images/bg_pattern.png");
+	-moz-border-radius: 8px 0 8px 0;
+	-moz-box-shadow: 1px 1px 2px silver inset;
+	background-color: #48577D;
+	background-image: url("../images/bg_pattern.png");
+	color: #EEE;
+	cursor: pointer;
+	float: right;
+	margin-right: 0;
+	padding: 3px;
+	position: relative;
+	text-align: center;
+	top: -25px;
+	width: 55px;
+}
+
+.description {
+	margin-left: 265px;
+	padding: 10px;
+}
+
+.description h3 {
+	border-bottom: 1px solid silver;
+	color: #48577D;
+	font-size: medium;
+	font-weight: 700;
+	margin: 0;
+	text-indent: 10px;
+	padding-bottom: 2px;
+	font-size: large;
+	cursor: pointer;
+}
+
+.holder p {
+	text-indent: 10px;
+}
+
+/*
 p, ol, ul, td {
 	font-family: verdana, arial, helvetica, sans-serif;
 	font-size: 13px;
@@ -74,3 +176,4 @@ div {
 	ul li {
 		font-size: 12px;
 		list-style: square; } }
+*/

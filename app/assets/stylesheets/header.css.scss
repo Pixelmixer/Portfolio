@@ -70,6 +70,47 @@ header a
 	color:#fff;
 }
 
+header h1 {
+	float: left;
+	color: white;
+	font-size: 31px;
+	font-weight: bolder;
+	margin: 0;
+	margin-right: 10px;
+	margin-top: 9px;
+}
+header h2 {
+	float: left;
+	color: #48577D;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 10px 0 0;
+}
+
+.validation {
+	float: right;
+	margin: 10px;
+	width: 155px;
+}
+
+.validation input {
+	border: none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3px;
+}
+
+.x {
+	background: url("../images/x.png") repeat scroll 0 0 transparent;
+	height: 16px;
+	margin-top: 3px;
+	position: absolute;
+	right: 113px;
+	text-indent: -99999px;
+	width: 16px;
+}
+
 nav {
 	position:fixed;
 	top: 40px;

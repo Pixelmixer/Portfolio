@@ -1,5 +1,12 @@
-<% @projects.each do |project| %>
-<div class="holder">
-	<%= link_to project.title, project %>
+<div id="<%= project.name %>" class="holder">
+	<div class="image" style="background-image: url( <%= image_path project.name + ".jpg" %> );">
+		<div class="close">x</div>
+		<div class="preview"></div>
+	</div>
+	<div class="description">
+		<h3><%= link_to project.title, project %></h3>
+		<p><%= raw project.description %></p>
+	</div>
+	<br style="clear: both;">
+	<div class="view">view</div>
 </div>
-<% end %>
