@@ -36,22 +36,21 @@
 }
 
 header {
-	border-radius:0 0 5px 5px;
-	-moz-border-radius:0 0 5px 5px;
-	-webkit-border-bottom-left-radius:5px;
-	-webkit-border-bottom-right-radius:5px;
-	-moz-box-shadow:0 1px 10px black, 0 -5px 20px gray inset;
-	-webkit-box-shadow:0 1px 10px black, 0 -5px 20px gray inset;
+	$header_width: 100%;
+
+	@include border-radius( 0px 0px 5px 5px );
+	@include box-shadow( black 0px 1px 10px, inset gray 0px -5px 20px );
 	background-color:#9197A6;
 	height:40px;
 	padding-top:3px;
 	position:fixed;
-	left:0;
-	right:0;
+	left: 0px;
+	right: 0px;
 	top:0;
-	width:100%;
 	z-index: 2;
 	opacity: .95;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 header img {
